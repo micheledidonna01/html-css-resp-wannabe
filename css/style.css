@@ -47,7 +47,7 @@ img {
 
 /* LAYOUT */
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -68,7 +68,7 @@ img {
 
 /************************************************
     SITE SECTIONS
- ************************************************/
+************************************************/
 
 /* HEADER */
 .site-header {
@@ -127,3 +127,78 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+/************************************************
+    TABLET
+************************************************/
+
+@media screen and (max-width: 768px){
+    
+    .col {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    main .container {
+        max-width: 480px;
+        padding:0;
+    }
+
+    /*****************
+    Lessons Section
+    *****************/
+
+    main .lessons .container .row{
+        width:100%;
+        gap:10px;
+    }
+    
+}
+
+/************************************************
+    SMARTPHONE
+ ************************************************/
+
+@media screen and (max-width: 480px){
+
+    .site-header h1{
+        margin-bottom: 3rem;
+        font-size: 2rem; 
+    }
+
+    .row {
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    .lessons .col {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    /*****************
+    Steps Section
+    *****************/
+    .steps .col {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .steps .container .row {
+        flex-direction: column;
+    }
+
+
+    /*****************
+    Why Us Section
+    *****************/
+
+    .why-us .col-left {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    
+    .why-us .col-right {
+        width: 100%;
+    }
+
+}
