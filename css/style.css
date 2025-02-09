@@ -47,7 +47,7 @@ img {
 
 /* LAYOUT */
 .container {
-    max-width: 1140px;
+    width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -198,7 +198,18 @@ img {
     }
     
     .why-us .col-right {
-        width: 100%;
+        width: 100%; 
+        
     }
 
+}
+
+/************
+Bonus
+************/
+
+@media screen and (min-width: 769px) and (max-width: 1160px){
+    main .container {
+        max-width: 768px;
+    }
 }
